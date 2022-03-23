@@ -1106,44 +1106,44 @@ import math
 #     except:
 #         break
 
-# A mid-summer nights dream
-while True:
-    try:
-        datas = int(input())
-        arr = []
-        for i in range(datas):
-            x = int(input())
-            arr.append(x)
-        arr.sort()
-        a = 0
-        b = 0
-        c = 0
-        if len(arr) % 2 == 1:
-            half = int(math.ceil(len(arr) / 2) - 1)
-            a = arr[half]
-            counter = 0
-            for i in arr:
-                if i == arr[half]:
-                    counter += 1
-            b = counter
-            c = 1
-        if len(arr) % 2 == 0:
-            half = int(math.ceil(len(arr) / 2) - 1)
-            a = arr[half]
-            if arr[half + 1] == arr[half]:
-                counter = 0
-                for i in arr:
-                    if i == arr[half]:
-                        counter += 1
-                b = counter
-                c = 1
-            else:
-                counter = 0
-                for i in arr:
-                    if i == arr[half] or i == arr[half + 1]:
-                        counter += 1
-                b = counter
-                c = arr[half + 1] - arr[half] + 1
-        print(a,b,c)
-    except:
-        break
+# # A mid-summer nights dream
+# while True:
+#     try:
+#         datas = int(input())
+#         arr = []
+#         for i in range(datas):
+#             x = int(input())
+#             arr.append(x)
+#         arr.sort()
+#         a = 0
+#         b = 0
+#         c = 0
+#         if len(arr) % 2 == 1:
+#             half = int(math.ceil(len(arr) / 2) - 1)
+#             a = arr[half]
+#             counter = 0
+#             for i in arr:
+#                 if i == arr[half]:
+#                     counter += 1
+#             b = counter
+#             c = 1
+#         if len(arr) % 2 == 0:
+#             half = int(math.ceil(len(arr) / 2) - 1)
+#             a = arr[half]
+#             if arr[half + 1] == arr[half]:
+#                 counter = 0
+#                 for i in arr:
+#                     if i == arr[half]:
+#                         counter += 1
+#                 b = counter
+#                 c = 1
+#             else:
+#                 counter = 0
+#                 for i in arr:
+#                     if i == arr[half] or i == arr[half + 1]:
+#                         counter += 1
+#                 b = counter
+#                 c = arr[half + 1] - arr[half] + 1
+#         print(a,b,c)
+#     except:
+#         break
