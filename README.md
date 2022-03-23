@@ -1,3 +1,3 @@
 # CPE
 
-### This repo is all I do for preparing cpe😆
+### Every UVA problem I solve for preparing cpe😆
